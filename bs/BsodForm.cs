@@ -182,6 +182,7 @@ namespace bs
 			//Keep keyboard focus on main form so that pressing escape is captured properly.
 			this.Focus();
             
+        }
 
 		/// <summary>
 		/// Makes the BSOD text centered in the form, using the form's size.
