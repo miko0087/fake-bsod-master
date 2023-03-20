@@ -181,16 +181,7 @@ namespace bs
 			this.Show();
 			//Keep keyboard focus on main form so that pressing escape is captured properly.
 			this.Focus();
-            Rectangle bounds = Screen.GetBounds(Point.Empty);
-            using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
-            {
-                using (Graphics g = Graphics.FromImage(bitmap))
-                {
-                    g.CopyFromScreen(Point.Empty, Point.Empty, bounds.Size);
-                }
-                bitmap.Save("test.png", ImageFormat.Png);
-            }
-        }
+            
 
 		/// <summary>
 		/// Makes the BSOD text centered in the form, using the form's size.
